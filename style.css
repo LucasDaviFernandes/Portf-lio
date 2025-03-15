@@ -78,9 +78,13 @@ k {
   justify-content: space-between;
   padding: 0 7%;
   height: 60px;
+  width: 180vh;
   top: 0;
   left: 0%;
   bottom: 0;
+  position: fixed;
+  opacity: 80%;
+  z-index: 3;
 }
 .navega {
   font-family: Oswald;
@@ -136,6 +140,12 @@ hr {
   margin-right: 10px;
   margin: 0% 0% 0% 2%;
   border-radius: 50%;
+  box-shadow: 0px 4px 12px #ff6347;
+  transition: 0.8s
+}
+.inicio img:hover{
+  transform: scale(1.1)
+  box-shadow: 0px 6px 14px #ff6347;
 }
 .btn_icon_header {
   display: none;
