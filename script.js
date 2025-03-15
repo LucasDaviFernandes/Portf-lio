@@ -2,8 +2,8 @@ const words = ["Programador", "Web Developer", "3D Modeler"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-const speed = 100; // Velocidade de digitação
-const delayAfterTyping = 1500; // Pausa após escrever a palavra
+const speed = 100;
+const delayAfterTyping = 1500;
 
 function typeEffect() {
   const typingElement = document.querySelector(".typing-text");
@@ -16,17 +16,17 @@ function typeEffect() {
 
     if (charIndex === currentWord.length) {
       isDeleting = true;
-      setTimeout(typeEffect, delayAfterTyping); // Espera antes de apagar
+      setTimeout(typeEffect, delayAfterTyping);
       return;
     }
   } else {
-    // Remove caracteres
+    
     typingElement.textContent = currentWord.substring(0, charIndex - 1);
     charIndex--;
 
     if (charIndex === 0) {
       isDeleting = false;
-      wordIndex = (wordIndex + 1) % words.length; // Muda para a próxima palavra
+      wordIndex = (wordIndex + 1) % words.length; 
     }
   }
 
