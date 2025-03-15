@@ -2,25 +2,23 @@ const words = ["Programador", "Web Developer", "3D Modeler"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-const speed = 100;
-const delayAfterTyping = 1500;
+const speed = 100; 
+const delayAfterTyping = 1500; 
 
 function typeEffect() {
   const typingElement = document.querySelector(".typing-text");
   const currentWord = words[wordIndex];
 
   if (!isDeleting) {
-    // Adiciona caracteres
     typingElement.textContent = currentWord.substring(0, charIndex + 1);
     charIndex++;
 
     if (charIndex === currentWord.length) {
       isDeleting = true;
-      setTimeout(typeEffect, delayAfterTyping);
+      setTimeout(typeEffect, delayAfterTyping); 
       return;
     }
   } else {
-    
     typingElement.textContent = currentWord.substring(0, charIndex - 1);
     charIndex--;
 
@@ -61,4 +59,30 @@ window.addEventListener("resize", function (event) {
   if (window.innerWidth > 768 && mostrar) {
     barmostrar();
   }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("div[id]");
+  const menuLinks = document.querySelectorAll(".navega a");
+
+  function highlightMenu() {
+    let scrollPos = window.scrollY;
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.offsetHeight;
+      const sectionId = section.getAttribute("id");
+
+      if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+        menuLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${sectionId}`) {
+            link.classList.add("active"); 
+          }
+        });
+      }
+    });
+  }
+
+  window.addEventListener("scroll", highlightMenu);
 });
