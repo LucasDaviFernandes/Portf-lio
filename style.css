@@ -96,7 +96,7 @@ k {
   font-weight: 700;
   transition: 0.5s;
 }
-.navega .ative {
+.navega .active {
   color: #ff6347;
   text-decoration: underline;
 }
@@ -123,7 +123,8 @@ h1 {
   color: #ff6347;
 }
 .inicio,
-.habilidades {
+.habilidades,
+.contatos {
   background-color: black;
   height: 650px;
 }
@@ -141,10 +142,10 @@ hr {
   margin: 0% 0% 0% 2%;
   border-radius: 50%;
   box-shadow: 0px 4px 12px #ff6347;
-  transition: 0.8s
+  transition: 0.8s;
 }
-.inicio img:hover{
-  transform: scale(1.1)
+.inicio img:hover {
+  transform: scale(1.1);
   box-shadow: 0px 6px 14px #ff6347;
 }
 .btn_icon_header {
@@ -313,4 +314,11 @@ h3 {
   border: 1px solid #ff6347;
   transform: scale(1.1);
   box-shadow: 2px 2px 5px;
+}
+#meconte {
+  height: 450px;
+  width: 500px;
+  margin-left: 400px;
+  justify-content: center;
+  background-color: #0e0402;
 }
