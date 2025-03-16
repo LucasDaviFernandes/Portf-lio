@@ -366,7 +366,7 @@ hr {
   }
   .Services {
     align-items: center;
-    height: 2100px;
+    height: 1500px;
   }
   .baixoservice,
   .cimaservice {
@@ -376,7 +376,7 @@ hr {
   }
   .baixoservice #tentando,
   .cimaservice #tentando {
-    width: 500px;
+    width: 400px;
     height: 300px;
     display: flex;
     flex-direction: column;
