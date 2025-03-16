@@ -303,6 +303,139 @@ hr {
     height: 700px !important;
   }
 }
+@media screen and (max-width: 415px) {
+  .btn_icon_header {
+    display: block;
+  }
+  h1 {
+    text-align: center;
+    justify-content: center !important;
+    margin: 5% 0% 0% 0% !important;
+    font-size: 40px;
+  }
+  .navega {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    background-color: rgb(14, 12, 12);
+    height: 100%;
+    width: 35vw;
+    padding: 1em;
+    animation-duration: 0.8s;
+    margin-left: -100vw;
+    z-index: 2;
+  }
+  .inicio {
+    flex-direction: column;
+    height: 1200px;
+    align-items: center;
+  }
+  #Lucas {
+    font-size: 35px;
+  }
+  .typing-text {
+    font-size: 35px;
+  }
+  .inicio img {
+    width: 350px;
+    float: none !important;
+    margin: 10% 0% 0% 0% !important;
+    margin-right: 0% !important;
+  }
+  .textonormal {
+    text-align: center !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  #Mn {
+    margin: 5% 0% 5% 0% !important;
+    text-align: left !important;
+    font-size: 35px;
+  }
+  #blackmilt {
+    margin: 0% !important;
+    justify-content: center;
+    align-items: center;
+  }
+  #socialcima {
+    margin: 0% !important;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .Services {
+    align-items: center;
+    height: 2100px;
+  }
+  .baixoservice,
+  .cimaservice {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .baixoservice #tentando,
+  .cimaservice #tentando {
+    width: 500px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    align-items: center;
+  }
+  .baixoservice {
+    margin-top: 45px;
+  }
+  .habilidades {
+    align-items: center;
+    height: 1550px;
+  }
+  .allimages {
+    justify-content: center;
+    margin: 0% 5%;
+    align-items: center;
+    height: auto;
+    width: 0px;
+    padding: 20px 50px 20px 50px !important;
+  }
+  .imagecima,
+  .embaixoimage {
+    right: 100;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 35px !important;
+  }
+  .htmlclass,
+  .JSclass,
+  .fusion,
+  .cssclass,
+  .inventorclass {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .sal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px !important;
+  }
+  .experiences,
+  .cursos,
+  .university {
+    height: 350px;
+  }
+  .trilha {
+    height: 1350px;
+  }
+  #meconte {
+    width: 300px !important;
+    height: 700px !important;
+  }
+}
 @keyframes mostrar {
   from {
     margin-left: -100vw;
