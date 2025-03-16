@@ -24,34 +24,37 @@
         <button onclick="barmostrar()" class="btn_icon_header">
           <i class="fa-solid fa-xmark"></i>
         </button>
-        <a href="#" class="active">Início</a>
-        <a href="#Services">Serviços</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#trilha">Trilha Acadêmica</a>
+        <a href="#Início" class="active">Início</a>
+        <a href="#Serviços">Serviços</a>
+        <a href="#Habilidades">Habilidades</a>
+        <a href="#Trilha Acadêmica">Trilha Acadêmica</a>
         <a href="#contatos">Contatos</a>
       </div>
     </header>
     <div tabindex="0" onclick="fechar()" class="tudao" id="tudao">
-      <div class="inicio">
+      <div class="inicio" id="Início">
         <img
           src="WhatsApp Image 2025-02-17 at 14.31.06.jpeg"
           alt=""
           width="500"
         />
         <h1>Olá, Eu sou <span id="Lucas">Lucas Davi</span></h1>
-        <h2 id="Mn">Eu sou um <span class="typing-text"></span></h2>
+        <div class="textonormal">
+          <h2 id="Mn">Eu sou um <span class="typing-text"></span></h2>
+        </div>
         <script src="script.js"></script>
         <!-- Nesse eu sou um colocar uma animação de digitação e delete, com as palavras: Web Developer Jr.; Software Developer Jr.;  -->
         <p id="blackmilt">
-          Sou um programador front-end apaixonado por criar interfaces modernas,
-          funcionais e responsivas. Trabalho com <k>HTML</k>, <k>CSS</k> e
-          <k>JavaScript</k>, desenvolvendo sites e softwares visando sempre a
-          melhor experiência para o usuário. Meu foco está em um código limpo,
-          uma incrível acessibilidade e um design intuitivo. Além do
-          desenvolvimento web, também atuo com modelagem 3D utilizando o
-          <k> Autodesk Inventor</k> e o <k>Autodesk Fusion</k>. Estou sempre
-          buscando a inovação e pronto para transformar ideias em realidade
-          digital. 🚀 Entre em contato e vamos criar algo incrível juntos!
+          Sou um programador <k>Front-End</k> apaixonado por criar interfaces
+          modernas, funcionais e responsivas. Trabalho com <k>HTML</k>,
+          <k>CSS</k> e <k>JavaScript</k>, desenvolvendo sites e softwares
+          visando sempre a melhor experiência para o usuário. Meu foco está em
+          um código limpo, uma incrível acessibilidade e um design intuitivo.
+          Além do desenvolvimento web, também atuo com
+          <k>Modelagem 3D</k> utilizando o <k> Autodesk Inventor</k> e o
+          <k>Autodesk Fusion</k>. Estou sempre buscando a inovação e pronto para
+          transformar ideias em realidade digital. 🚀 Entre em contato e vamos
+          criar algo incrível juntos!
         </p>
         <div class="socialmidia" id="socialcima">
           <a href="https://wa.me/5571992066970" target="_blank"
@@ -70,67 +73,74 @@
           ></a>
         </div>
       </div>
-      <div class="Services" id="Services">
+      <div class="Services" id="Serviços">
+        <p class="sumir" id="servicos">-</p>
         <h2 id="melhors">Serviços</h2>
         <div class="cimaservice">
-          <p>
-            Programo Sites <br /><br />Programo sites usando as linguagens HTML,
-            CSS e JavaScript, criando páginas modernas, responsivas e
-            interativas. Meu objetivo é transformar projetos de site em
-            realidade.
+          <p id="tentando">
+            <span class="serviceimport">Programo Sites</span>
+            ><br />Programo sites usando as linguagens HTML, CSS e JavaScript,
+            criando páginas modernas, responsivas e interativas. Meu objetivo é
+            transformar projetos de site em realidade.
           </p>
-          <p>
-            Desenvolvo Softwares <br /><br />Desenvolvo softwares personalizados
-            para atender necessidades específicas. Me empenho em criar soluções
-            eficientes, sempre com testes rigorosos visando a melhor eficácia.
+          <p id="tentando">
+            <span class="serviceimport">Desenvolvo Softwares</span>
+            <br />Desenvolvo softwares personalizados para atender necessidades
+            específicas. Me empenho em criar soluções eficientes, sempre com
+            testes rigorosos visando a melhor eficácia.
           </p>
-          <p>
-            Desenvolvo Modelos para Sites <br /><br />Faço uso do Canva Pro para
-            criar e desenvolver modelos visuais modernos, elegantes e funcionais
-            para futuros sites. Com o objetivo de garantir que o design seja
-            intuitivo, eficaz e atraente para melhor experiência do usuário
+          <p id="tentando">
+            <span class="serviceimport">Crio Modelos para Sites</span>
+            <br />Faço uso do Canva Pro para criar e desenvolver modelos visuais
+            modernos, elegantes e funcionais para futuros sites. Com o objetivo
+            de garantir que o design seja intuitivo, eficaz e atraente para
+            melhor experiência do usuário
           </p>
         </div>
         <div class="baixoservice">
-          <p>
-            Modelo Objetos em 3D <br /><br />Utilizo Autodesk Inventor e Fusion
-            para modelar objetos em 3D, criando representações digitais
-            detalhadas e precisas. Com esses programas, sou capaz de projetar
-            protótipos e peças para diversas aplicações.
+          <p id="tentando">
+            <span class="serviceimport">Modelo Objetos em 3D</span>
+            <br />Utilizo Autodesk Inventor e Fusion para modelar objetos em 3D,
+            criando representações digitais detalhadas e precisas. Com esses
+            programas, sou capaz de projetar protótipos e peças para diversas
+            aplicações.
           </p>
-          <p>
-            Testo Softwares <br /><br />Realizo testes em softwares para
-            garantir seu funcionamento adequado. Isso inclui testes de
-            funcionalidade, desempenho e usabilidade, sempre focando em
-            identificar e corrigir possíveis falhas ou melhorias.
+          <p id="tentando">
+            <span class="serviceimport">Testo Softwares</span>
+            <br />Realizo testes em softwares para garantir seu funcionamento
+            adequado. Isso inclui testes de funcionalidade, desempenho e
+            usabilidade, sempre focando em identificar e corrigir possíveis
+            falhas ou melhorias.
           </p>
-          <p>
-            Analiso Códigos Front-End <br /><br />Analiso códigos front-end para
-            verificar a qualidade e a eficiência do desenvolvimento web. Foco na
-            performance, compatibilidade entre navegadores e otimização para
-            garantir uma experiência de usuário excelente.
+          <p id="tentando">
+            <span class="serviceimport">Analiso Códigos Front-End</span>
+            <br />Analiso códigos front-end para verificar a qualidade e a
+            eficiência do desenvolvimento web. Foco na performance,
+            compatibilidade entre navegadores e otimização para garantir uma
+            experiência de usuário excelente.
           </p>
         </div>
       </div>
-      <div class="habilidades" id="habilidades">
+      <div class="habilidades" id="Habilidades">
+        <p class="sumir" id="hab">-</p>
         <h2>Habilidades</h2>
-        <div class="allimages">
+        <div class="allimages" id="tenando2">
           <div class="imagecima">
-            <div class="htmlclass">
+            <div class="htmlclass" id="tentandodnv">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
                 alt="HTML image"
               />
               <figcaption>HTML</figcaption>
             </div>
-            <div class="JSclass">
+            <div class="JSclass" id="tentandodnv">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
                 alt="JavaScript Image"
               />
               <figcaption>JavaScript</figcaption>
             </div>
-            <div class="fusion">
+            <div class="fusion" id="tentandodnv">
               <img
                 src="autodesk-fusion-360-logo-7f72a76397-seeklogocom.png"
                 alt="Autodesk Fusion Image"
@@ -140,14 +150,14 @@
           </div>
           <br />
           <div class="embaixoimage">
-            <div class="cssclass">
+            <div class="cssclass" id="tentandodnv">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
                 alt="CSS Image"
               />
               <figcaption>CSS</figcaption>
             </div>
-            <div class="inventorclass">
+            <div class="inventorclass" id="tentandodnv">
               <img
                 src="inventor_logo_autodesk-freelogovectors.net_.png"
                 alt="Autodesk Inventor Image"
@@ -157,7 +167,8 @@
           </div>
         </div>
       </div>
-      <div class="trilha" id="trilha">
+      <div class="trilha" id="Trilha Acadêmica">
+        <p class="sumir" id="trr">-</p>
         <h2>Trilha <span id="qq">Acadêmica</span></h2>
         <div class="sal">
           <div class="experiences">
@@ -202,11 +213,12 @@
         </div>
       </div>
       <div class="contatos" id="contatos">
+        <p class="sumir" id="contats">-</p>
         <h2>Contatos</h2>
         <div id="meconte">
           <h3>
-            Me contate agora e vamos fazer um projeto incrível! Apenas clique em
-            um dos icones abaixo!
+            Entre em contato agora e vamos fazer um projeto incrível! Apenas
+            clique em um dos icones abaixo!
           </h3>
           <div class="socialmidia">
             <a href="https://wa.me/5571992066970" target="_blank"
