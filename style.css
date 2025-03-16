@@ -178,6 +178,7 @@ hr {
     text-align: center;
     justify-content: center !important;
     margin: 5% 0% 0% 0% !important;
+    font-size: 45px;
   }
   .navega {
     position: fixed;
@@ -196,7 +197,14 @@ hr {
     height: 1200px;
     align-items: center;
   }
+  #Lucas {
+    font-size: 45px;
+  }
+  .typing-text {
+    font-size: 40px;
+  }
   .inicio img {
+    width: 400px;
     float: none !important;
     margin: 10% 0% 0% 0% !important;
     margin-right: 0% !important;
@@ -210,6 +218,7 @@ hr {
   #Mn {
     margin: 5% 0% 5% 0% !important;
     text-align: left !important;
+    font-size: 40px;
   }
   #blackmilt {
     margin: 0% !important;
