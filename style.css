@@ -21,7 +21,11 @@ li {
   font-family: "Playfair Display", sans-serif;
   font-weight: 700;
 }
-
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #Lucas {
   color: #ff6347;
   font-size: 60px;
@@ -126,7 +130,17 @@ h1 {
 .habilidades,
 .contatos {
   background-color: black;
-  height: 650px;
+  height: 700px;
+}
+.contatos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .Services,
 .trilha {
@@ -161,7 +175,7 @@ hr {
     display: block;
   }
   .navega {
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     top: 0;
     background-color: rgb(14, 12, 12);
@@ -171,6 +185,96 @@ hr {
     animation-duration: 0.8s;
     margin-left: -100vw;
     z-index: 2;
+  }
+  .inicio {
+    flex-direction: column;
+    height: 1200px;
+    align-items: center;
+  }
+  .textonormal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Mn {
+    text-align: left;
+    margin: 5% 0% 5% 0%;
+  }
+  #blackmilt {
+    margin: 2% 0% 3% 2.75%;
+  }
+  #socialcima {
+    margin: 2% 0% 3% 2.75%;
+  }
+  .inicio img {
+    margin: 5% 0% 5% 10%;
+  }
+  .Services {
+    align-items: center;
+    height: 2100px;
+  }
+  .baixoservice,
+  .cimaservice {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .baixoservice #tentando,
+  .cimaservice #tentando {
+    width: 500px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    align-items: center;
+  }
+  .baixoservice {
+    margin-top: 45px;
+  }
+  .habilidades {
+    align-items: center;
+    height: 1550px;
+  }
+  .allimages {
+    justify-content: center;
+    margin: 0% 5%;
+    align-items: center;
+    height: auto;
+    width: 0px;
+    padding: 20px 50px 20px 50px !important;
+  }
+  .imagecima,
+  .embaixoimage {
+    right: 100;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 35px !important;
+  }
+  .htmlclass,
+  .JSclass,
+  .fusion,
+  .cssclass,
+  .inventorclass {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .sal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px !important;
+  }
+  .experiences,
+  .cursos,
+  .university {
+    height: 350px;
+  }
+  .trilha {
+    height: 1350px;
   }
 }
 @keyframes mostrar {
@@ -254,13 +358,14 @@ figcaption {
 .allimages img {
   width: 100px;
   height: 100px;
+  align-items: center;
 }
 .allimages {
+  align-items: center;
   justify-content: center;
   background-color: #250f0b;
   background-size: 50%;
   width: 300px;
-  margin: 0% 0% 30% 15%;
   padding: 30px 325px;
 }
 .embaixoimage {
@@ -285,6 +390,11 @@ h3 {
   color: white;
   margin-top: 0;
 }
+.serviceimport {
+  font-size: 30px;
+  color: black;
+  font-family: "oswald", sans-serif;
+}
 .sal {
   display: flex;
   justify-content: center;
@@ -304,6 +414,8 @@ h3 {
   transition: 0.5s;
 }
 .bordins {
+  padding: 0;
+  margin: 0;
   margin-top: 0;
 }
 .experiences:hover,
@@ -318,7 +430,25 @@ h3 {
 #meconte {
   height: 450px;
   width: 500px;
-  margin-left: 400px;
   justify-content: center;
   background-color: #0e0402;
+}
+.sumir {
+  color: transparent;
+  margin: 0% 0% 0% 0%;
+}
+#servicos {
+  height: 65px;
+}
+#hab {
+  height: 15px;
+}
+#trr {
+  height: 0.2px;
+}
+.trilha h2 {
+  margin-top: 80px;
+}
+#contats {
+  height: 10px;
 }
