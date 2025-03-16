@@ -6,7 +6,10 @@ h1 {
   font-size: 60px;
   line-height: 0.8;
 }
-
+h1 {
+  text-align: left;
+  margin: 10% 0% 0% 48.9%;
+}
 #Mn {
   text-align: left;
   color: white;
@@ -107,10 +110,6 @@ k {
 body {
   margin: 0;
 }
-h1 {
-  text-align: end;
-  margin: 5% 10% 0% 0%;
-}
 #blackmilt {
   text-align: left;
   margin: 0% 2% 0% 49%;
@@ -170,7 +169,7 @@ hr {
   cursor: pointer;
   font-size: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 416px) {
   .btn_icon_header {
     display: block;
   }
@@ -224,16 +223,19 @@ hr {
     margin: 0% !important;
     justify-content: center;
     align-items: center;
+    text-align: center;
+  }
+  #socialcima a {
+    margin: 0% !important;
   }
   #socialcima {
-    margin: 0% !important;
-    justify-content: center;
+    justify-content: center !important;
+    margin: 0%;
     display: flex;
-    align-items: center;
   }
   .Services {
     align-items: center;
-    height: 3000px;
+    height: 2500px;
   }
   .baixoservice,
   .cimaservice {
@@ -243,8 +245,6 @@ hr {
   }
   .baixoservice #tentando,
   .cimaservice #tentando {
-    width: 450px;
-    height: 250px;
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
@@ -303,7 +303,7 @@ hr {
     height: 700px !important;
   }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 415px) and (min-width: 10px) {
   .btn_icon_header {
     display: block;
   }
@@ -311,7 +311,7 @@ hr {
     text-align: center;
     justify-content: center !important;
     margin: 5% 0% 0% 0% !important;
-    font-size: 40px;
+    font-size: 30px;
   }
   .navega {
     position: fixed;
@@ -327,14 +327,30 @@ hr {
   }
   .inicio {
     flex-direction: column;
-    height: 1200px;
+    height: 1300px;
     align-items: center;
   }
   #Lucas {
-    font-size: 35px;
+    font-size: 30px;
   }
   .typing-text {
-    font-size: 35px;
+    font-size: 27.5px;
+  }
+  #socialcima {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% !important;
+  }
+  #socialcima i {
+    justify-content: center;
+  }
+  #socialcima a {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 10% 0% 0% !important;
   }
   .inicio img {
     width: 350px;
@@ -351,22 +367,17 @@ hr {
   #Mn {
     margin: 5% 0% 5% 0% !important;
     text-align: left !important;
-    font-size: 35px;
+    font-size: 27.5px;
   }
   #blackmilt {
     margin: 0% !important;
     justify-content: center;
     align-items: center;
-  }
-  #socialcima {
-    margin: 0% !important;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    text-align: center;
   }
   .Services {
     align-items: center;
-    height: 1350px;
+    height: 2100px;
   }
   .baixoservice,
   .cimaservice {
@@ -376,8 +387,8 @@ hr {
   }
   .baixoservice #tentando,
   .cimaservice #tentando {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 255px;
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
@@ -416,6 +427,9 @@ hr {
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
+  }
+  .serviceimport {
+    margin: 0% 0% 0% 0%;
   }
   .sal {
     display: flex;
