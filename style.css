@@ -298,6 +298,10 @@ hr {
   .trilha {
     height: 1350px;
   }
+  #meconte {
+    width: 300px !important;
+    height: 700px !important;
+  }
 }
 @keyframes mostrar {
   from {
