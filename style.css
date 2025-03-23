@@ -10,6 +10,9 @@ h1 {
   text-align: left;
   margin: 10% 0% 0% 48.9%;
 }
+#espacop {
+  margin-bottom: 10px;
+}
 #Mn {
   text-align: left;
   color: white;
@@ -132,6 +135,13 @@ body {
   background-color: black;
   height: 700px;
 }
+.conectorP {
+  display: flex;
+  align-items: center;
+  width: 18.6%;
+  height: 2px;
+  background-color: #ff4422;
+}
 .contatos {
   display: flex;
   flex-direction: column;
@@ -142,10 +152,13 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.Services,
-.trilha {
+.Services {
   background-color: #1c1c1c;
   height: 800px;
+}
+.trilha {
+  background-color: #1c1c1c;
+  height: 2500px;
 }
 hr {
   margin: 0% 0% 0% 0%;
@@ -157,6 +170,7 @@ hr {
   border-radius: 50%;
   box-shadow: 0px 4px 12px #ff6347;
   transition: 0.8s;
+  cursor: pointer;
 }
 .inicio img:hover {
   transform: scale(1.1);
@@ -291,7 +305,7 @@ hr {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 30px !important;
+    gap: 0px !important;
   }
   .experiences,
   .cursos,
@@ -299,16 +313,41 @@ hr {
     height: 350px;
   }
   .trilha {
-    height: 1350px;
+    height: 4000px;
+  }
+  .linha {
+    height: 3700px !important;
+    left: 49.5% !important;
   }
   #meconte {
     width: 300px !important;
     height: 700px !important;
   }
+  .certiss {
+    width: 40% !important;
+  }
+  .certiss h2 {
+    transform: scale(0.9);
+  }
+  .right {
+    margin-left: 1% !important;
+  }
+  .left {
+    margin-right: 1% !important;
+  }
+  .conector {
+    width: 3.6% !important;
+  }
+  .conectorP {
+    width: 4% !important;
+  }
 }
 @media screen and (max-width: 415px) and (min-width: 10px) {
   .btn_icon_header {
     display: block;
+  }
+  .conectorP {
+    width: 2.8%;
   }
   h1 {
     text-align: center;
@@ -328,6 +367,19 @@ hr {
     margin-left: -100vw;
     z-index: 2;
   }
+  .sal h2 {
+    font-size: 30px !important;
+  }
+  .certiss p {
+    font-size: 15px !important;
+  }
+  .linha {
+    height: 2650px !important;
+    left: 45%;
+  }
+  .certiss {
+    width: 40% !important;
+  }
   .inicio {
     flex-direction: column;
     height: 1300px;
@@ -335,6 +387,9 @@ hr {
   }
   #Lucas {
     font-size: 30px;
+  }
+  .certiss h2 {
+    transform: scale(0.8);
   }
   .typing-text {
     font-size: 27.5px;
@@ -442,7 +497,7 @@ hr {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 30px !important;
+    gap: 0px !important;
   }
   .experiences,
   .cursos,
@@ -450,11 +505,20 @@ hr {
     height: 350px;
   }
   .trilha {
-    height: 1350px;
+    height: 3300px;
   }
   #meconte {
     width: 300px !important;
     height: 700px !important;
+  }
+  .left {
+    margin-right: 2% !important;
+  }
+  .right {
+    margin-left: 2% !important;
+  }
+  .conector {
+    width: 1% !important;
   }
 }
 @keyframes mostrar {
@@ -478,6 +542,7 @@ hr {
   border-radius: 10%;
   height: 250px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .cimaservice p:hover {
   color: #ff6347;
@@ -499,6 +564,7 @@ hr {
   border-radius: 10%;
   height: 250px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .baixoservice p:hover {
   color: #ff6347;
@@ -519,7 +585,7 @@ hr {
   background-size: cover;
 }
 figcaption {
-  color: #ff6347;
+  color: #ff4422;
   font-size: 30px;
   font-family: "Playfair Display", sans-serif;
   font-weight: 700;
@@ -534,6 +600,7 @@ figcaption {
   padding: 30px 70px;
   border-radius: 10%;
   transition: 0.5s;
+  cursor: pointer;
 }
 .allimages img {
   width: 100px;
@@ -578,8 +645,59 @@ h3 {
 .sal {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-  gap: 8em;
+  flex-direction: column;
+  position: relative;
+}
+.left {
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+.right {
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+.item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.certiss p {
+  color: black;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+  text-align: left;
+}
+.linha {
+  flex-grow: 1;
+  left: 49.5%;
+  width: 1%;
+  background-color: black;
+  height: 2200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.conector {
+  display: flex;
+  align-items: center;
+  width: 18.4%;
+  height: 2px;
+  background-color: #ff4422;
+}
+.certiss {
+  padding: 1%;
+  background-color: #ff4422;
+  width: 25%;
+  border-radius: 5%;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.certiss:hover {
+  color: #ff6347;
+  background-color: #d12106;
+  border: 1px solid #ff6347;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px;
 }
 .experiences,
 .cursos,
@@ -631,4 +749,23 @@ h3 {
 }
 #contats {
   height: 10px;
+}
+.sal h2 {
+  line-height: 1.1;
+  font-family: "Oswald";
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+  color: black;
+}
+.sal i {
+  font-size: 30px;
+  color: rgb(80, 79, 79);
+  background-color: wheat;
+  padding: 0.75% 0.5%;
+  border-radius: 50%;
+  z-index: 2;
+}
+#books {
+  padding: 0.75% 0.75%;
 }
