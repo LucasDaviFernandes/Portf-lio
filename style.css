@@ -316,7 +316,7 @@ hr {
     height: 4000px;
   }
   .trilha .linha {
-    height: 100% !important;
+    height: 95% !important;
     left: 49.5% !important;
   }
   #meconte {
@@ -374,7 +374,7 @@ hr {
     font-size: 15px !important;
   }
   .trilha .linha {
-    height: 100% !important;
+    height: 95% !important;
     left: 45%;
   }
   .certiss {
@@ -672,10 +672,12 @@ h3 {
   left: 49.5%;
   width: 1%;
   background-color: black;
-  height: 2200px;
   position: absolute;
   top: 0;
   bottom: 0;
+}
+.trilha .linha {
+  height: 95%;
 }
 .conector {
   display: flex;
