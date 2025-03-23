@@ -256,6 +256,7 @@ hr {
   }
   .baixoservice,
   .cimaservice {
+    transform: scale(0.9);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -439,6 +440,7 @@ hr {
   }
   .baixoservice,
   .cimaservice {
+    transform: scale(0.9);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
