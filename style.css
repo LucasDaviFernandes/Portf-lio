@@ -315,8 +315,8 @@ hr {
   .trilha {
     height: 4000px;
   }
-  .linha {
-    height: 3700px !important;
+  .trilha .linha {
+    height: 100% !important;
     left: 49.5% !important;
   }
   #meconte {
@@ -373,8 +373,8 @@ hr {
   .certiss p {
     font-size: 15px !important;
   }
-  .linha {
-    height: 2650px !important;
+  .trilha .linha {
+    height: 100% !important;
     left: 45%;
   }
   .certiss {
