@@ -188,6 +188,9 @@ hr {
   .btn_icon_header {
     display: block;
   }
+  .contatos {
+    height: 1200px;
+  }
   h1 {
     text-align: center;
     justify-content: center !important;
@@ -394,6 +397,9 @@ hr {
   }
   .typing-text {
     font-size: 27.5px;
+  }
+  .contatos {
+    height: 1200px;
   }
   #socialcima {
     text-align: center;
