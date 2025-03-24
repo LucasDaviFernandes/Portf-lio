@@ -200,7 +200,8 @@ hr {
   .navega {
     position: fixed;
     flex-direction: column;
-    top: 0;
+    top: 30px;
+    width: 35vh;
     background-color: rgb(14, 12, 12);
     height: 100%;
     animation-duration: 0.8s;
