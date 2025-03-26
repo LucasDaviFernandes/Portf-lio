@@ -677,6 +677,7 @@ h3 {
   text-align: left;
 }
 .linha {
+  border-radius: 30px;
   flex-grow: 1;
   left: 49.5%;
   width: 1%;
